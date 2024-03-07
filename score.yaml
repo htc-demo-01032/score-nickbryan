@@ -4,6 +4,8 @@ metadata:
 containers:
   jotd:
     image: .
+    variables:
+      MESSAGE: Hello from ${resources.jotd-dns.host}
 service:
   ports:
     www:
