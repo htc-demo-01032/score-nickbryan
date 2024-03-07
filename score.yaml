@@ -1,0 +1,11 @@
+apiVersion: score.dev/v1b1
+metadata:
+  name: nicks-awesome-app
+containers:
+  jotd:
+    image: .
+service:
+  ports:
+    www:
+      port: 3000
+      targetPort: 3000
